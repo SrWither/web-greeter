@@ -18,7 +18,7 @@ endif
 
 ifeq (${ENABLE_ZSH_COMPLETION}, true)
     ifeq ($(shell which zsh >/dev/null 2>&1 && echo 0), 0)
-        zshcompletiondir := /usr/share/zsh/site-functions/
+        zshcompletiondir := /usr/local/share/zsh/site-functions/
     endif
 endif
 
@@ -74,7 +74,7 @@ $(INSTALL_ROOT):
 		mkdir -p "${INSTALL_PREFIX}/share/$$d"; \
 	done
 	@for d in lightdm xdg/lightdm/lightdm.conf.d; do \
-		mkdir -p "${INSTALL_ROOT}/etc/$$d"; \
+		mkdir -p "${INSTALL_ROOT}/usr/local/etc/$$d"; \
 	done
 	@for d in lib/web-greeter bin; do \
 		mkdir -p "${INSTALL_PREFIX}/$$d"; \
@@ -162,13 +162,13 @@ build_dist_files: $(dist_local/web-greeter.1) $(dist_local/news) $(dist_local/me
 	@echo "✔ Dist files copied"
 
 # Config files
-config/web-greeter := $(abspath ${DESTDIR}/etc/lightdm/web-greeter.yml)
-config/lightdm-wrapper := $(abspath ${DESTDIR}/etc/xdg/lightdm/lightdm.conf.d/90-greeter.wrapper.conf)
-config/Xgreeter := $(abspath ${DESTDIR}/etc/lightdm/Xgreeter)
+config/web-greeter := $(abspath ${DESTDIR}/usr/local/etc/lightdm/web-greeter.yml)
+config/lightdm-wrapper := $(abspath ${DESTDIR}/usr/local/etc/xdg/lightdm/lightdm.conf.d/90-greeter.wrapper.conf)
+config/Xgreeter := $(abspath ${DESTDIR}/usr/local/etc/lightdm/Xgreeter)
 
-config_local/web-greeter := $(abspath ${INSTALL_ROOT}/etc/lightdm/web-greeter.yml)
-config_local/lightdm-wrapper := $(abspath ${INSTALL_ROOT}/etc/xdg/lightdm/lightdm.conf.d/90-greeter-wrapper.conf)
-config_local/Xgreeter := $(abspath ${INSTALL_ROOT}/etc/lightdm/Xgreeter)
+config_local/web-greeter := $(abspath ${INSTALL_ROOT}/usr/local/etc/lightdm/web-greeter.yml)
+config_local/lightdm-wrapper := $(abspath ${INSTALL_ROOT}/usr/local/etc/xdg/lightdm/lightdm.conf.d/90-greeter-wrapper.conf)
+config_local/Xgreeter := $(abspath ${INSTALL_ROOT}/usr/local/etc/lightdm/Xgreeter)
 
 $(config_local/web-greeter): $(INSTALL_ROOT) ${BUILD_DIR}/dist/web-greeter.yml
 	@cp "${BUILD_DIR}/dist/web-greeter.yml" "${config_local/web-greeter}"

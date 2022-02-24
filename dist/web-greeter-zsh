@@ -3,8 +3,8 @@
 _webgreeter() {
     integer ret=1
     local -a args
-		local themes=$(ls -1d /usr/share/web-greeter/themes/*/ | cut -c 1- |
-				rev | cut -c 2- | rev | sort | sed 's/\/usr\/share\/web-greeter\/themes\///')
+		local themes=$(ls -1d /usr/local/share/web-greeter/themes/*/ | cut -c 1- |
+				rev | cut -c 2- | rev | sort | sed 's/\/usr\/local\/share\/web-greeter\/themes\///')
     args+=(
         '--debug[Runs the greeter in debug mode]'
         '--normal[Runs in non-debug mode]'

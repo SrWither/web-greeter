@@ -7,9 +7,9 @@
 # NOTE: Paths must be accessible to the lightdm system user account (so they cannot be anywhere in /home)
 #
 branding:
-    background_images_dir: /usr/share/backgrounds
-    logo_image: /usr/share/web-greeter/themes/default/img/antergos-logo-user.png
-    user_image: /usr/share/web-greeter/themes/default/img/antergos.png
+    background_images_dir: /usr/local/share/backgrounds
+    logo_image: /usr/local/share/web-greeter/themes/default/img/antergos-logo-user.png
+    user_image: /usr/local/share/web-greeter/themes/default/img/antergos.png
 
 #
 # greeter:
@@ -18,7 +18,7 @@ branding:
 #     screensaver_timeout: Blank the screen after this many seconds of inactivity.
 #     secure_mode:         Don't allow themes to make remote http requests.
 #     theme:               Greeter theme to use.
-#     icon_theme:          Icon/cursor theme to use, located in /usr/share/icons/, i.e. "Adwaita". Set to None to use default icon theme.
+#     icon_theme:          Icon/cursor theme to use, located in /usr/local/share/icons/, i.e. "Adwaita". Set to None to use default icon theme.
 #     time_language:       Language to use when displaying the date or time, i.e. "en-us", "es-419", "ko", "ja". Set to None to use system's language.
 #
 # NOTE: See IANA subtags registry for time_language options: https://www.iana.org/assignments/language-subtag-registry/language-subtag-registry
@@ -27,7 +27,7 @@ greeter:
     debug_mode: False
     detect_theme_errors: True
     screensaver_timeout: 300
-    secure_mode: True
+    secure_mode: False
     theme: gruvbox
     icon_theme:
     time_language:

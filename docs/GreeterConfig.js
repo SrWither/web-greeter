@@ -28,7 +28,7 @@
 
 /**
  * Provides greeter themes with a way to access values from the greeter's config
- * file located at `/etc/lightdm/web-greeter.yml`. The greeter will
+ * file located at `/usr/local/etc/lightdm/web-greeter.yml`. The greeter will
  * create an instance of this class when it starts. The instance can be accessed
  * with the global variable: `greeter_config`.
  *
@@ -58,7 +58,7 @@ class GreeterConfig  {
 	 * @property {Number}  screensaver_timeout Blank the screen after this many seconds of inactivity.
 	 * @property {Boolean} secure_mode         Don't allow themes to make remote http requests.
 	 * @property {String}  theme               The name of the theme to be used by the greeter.
-	 * @property {String|Null}  icon_theme		 Icon/cursor theme to use, located in /usr/share/icons, i.e "Adwaita". Set to Null to use default icon theme.
+	 * @property {String|Null}  icon_theme		 Icon/cursor theme to use, located in /usr/local/share/icons, i.e "Adwaita". Set to Null to use default icon theme.
 	 * @property {String|Null}  time_language  Language to use when displaying the date or time, i.e "en-us", "es-419", "ko", "ja". Set to Null to use system's language.
 	 * @readonly
 	 */

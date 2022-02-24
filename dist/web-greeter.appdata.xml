@@ -118,7 +118,7 @@
 					<li>"greeterutil" renamed to "theme_utils"</li>
 					<li>"config" renamed to "greeter_config"</li>
 					<li>"lightdm-webkit2-greeter.conf" renamed to "web-greeter.yml"</li>
-					<li>Themes are now installed inside "/usr/share/web-greeter/themes"</li>
+					<li>Themes are now installed inside "/usr/local/share/web-greeter/themes"</li>
 					<li>Vendors updated</li>
 					<li>Previous deprecated methods and properties were removed</li>
 				</ul>
@@ -190,4 +190,3 @@
 	<translation type="gettext">web-greeter</translation>
 	<developer_name>JezerM</developer_name>
 </component>
-

@@ -10,8 +10,8 @@ _web-greeter() {
 	case "${last}" in
 		--theme)
 			_filedir
-			options=$(ls -1d /usr/share/web-greeter/themes/*/ | cut -c 1- |
-				rev | cut -c 2- | rev | sort | sed 's/\/usr\/share\/web-greeter\/themes\///')
+			options=$(ls -1d /usr/local/share/web-greeter/themes/*/ | cut -c 1- |
+				rev | cut -c 2- | rev | sort | sed 's/\/usr\/local\/share\/web-greeter\/themes\///')
 			;;
 	esac
 

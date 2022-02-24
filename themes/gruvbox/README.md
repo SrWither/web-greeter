@@ -6,11 +6,11 @@ This is a web-greeter theme with gruvbox color scheme, included with [web-greete
 
 Based on [glorious-theme][glorious] by manilarome.
 
-- It's simple
-- Simple keyboard navigation
-- Vanilla Javascript
-- Includes battery and brightness support
-- Gruvbox everywhere!
+-   It's simple
+-   Simple keyboard navigation
+-   Vanilla Javascript
+-   Includes battery and brightness support
+-   Gruvbox everywhere!
 
 ## Screenshots
 
@@ -22,12 +22,12 @@ Based on [glorious-theme][glorious] by manilarome.
 
 ## Installation
 
-This theme is shipped with `web-greeter`. To use it, set the `theme` as `gruvbox` inside `/etc/lightdm/web-greeter.yml`
+This theme is shipped with `web-greeter`. To use it, set the `theme` as `gruvbox` inside `/usr/local/etc/lightdm/web-greeter.yml`
 
 ## TODO
 
-- Background selector
-- Translations support
+-   Background selector
+-   Translations support
 
 [web-greeter]: https://github.com/JezerM/web-greeter "Web Greeter"
 [glorious]: https://github.com/manilarome/lightdm-webkit2-theme-glorious "Glorious"

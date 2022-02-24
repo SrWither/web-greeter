@@ -6,10 +6,10 @@ This is a web-greeter theme based on [dracula color scheme][dracula], included w
 
 Based also on [glorious-theme][glorious] by manilarome.
 
-- Looks good at night, when dracula wakes up
-- Simple keyboard navigation
-- Vanilla Javascript
-- Background selector
+-   Looks good at night, when dracula wakes up
+-   Simple keyboard navigation
+-   Vanilla Javascript
+-   Background selector
 
 ## Screenshots
 
@@ -23,7 +23,7 @@ Based also on [glorious-theme][glorious] by manilarome.
 
 ## Installation
 
-This theme is shipped with `web-greeter`. To use it, set the `theme` as `dracula` inside `/etc/lightdm/web-greeter.yml`
+This theme is shipped with `web-greeter`. To use it, set the `theme` as `dracula` inside `/usr/local/etc/lightdm/web-greeter.yml`
 
 ## Credits
 
@@ -33,9 +33,9 @@ Window blurred background image by [Riley Briggs](https://unsplash.com/photos/cS
 
 ## TODO
 
-- Battery and brightness support
-- Lock indicator
-- Translations support
+-   Battery and brightness support
+-   Lock indicator
+-   Translations support
 
 [dracula]: https://github.com/dracula/dracula-theme "Dracula theme"
 [web-greeter]: https://github.com/JezerM/web-greeter "Web Greeter"

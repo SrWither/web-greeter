@@ -66,7 +66,7 @@ class Backgrounds {
 
   _getImages(path) {
     this._backgroundImagesDir =
-      greeter_config.branding.background_images_dir || "/usr/share/backgrounds";
+      greeter_config.branding.background_images_dir || "/usr/local/share/backgrounds";
     return new Promise((resolve) => {
       theme_utils.dirlist(
         path ? path : this._backgroundImagesDir,

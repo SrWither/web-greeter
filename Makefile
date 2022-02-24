@@ -1,5 +1,5 @@
 DESTDIR ?= /
-PREFIX ?= /usr
+PREFIX ?= /usr/local
 ENABLE_BASH_COMPLETION ?= true
 ENABLE_ZSH_COMPLETION ?= true
 

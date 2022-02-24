@@ -1,3 +1,5 @@
+#!/usr/local/bin/gmake
+
 DESTDIR ?= /
 PREFIX ?= /usr/local
 ENABLE_BASH_COMPLETION ?= true

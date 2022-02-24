@@ -98,7 +98,7 @@ ENABLED_SETTINGS = [
 
 def get_default_cursor():
     """Gets the default cursor theme"""
-    default_theme = "/usr/share/icons/default/index.theme"
+    default_theme = "/usr/local/icons/default/index.theme"
     cursor_theme = ""
     matched = None
     try:
@@ -357,7 +357,7 @@ class Browser(Application):
     def load_theme(self):
         """Load theme"""
         theme = web_greeter_config["config"]["greeter"]["theme"]
-        dir_t = "/usr/share/web-greeter/themes/"
+        dir_t = "/usr/local/web-greeter/themes/"
         path_to_theme = os.path.join(dir_t, theme, "index.html")
         def_theme = "gruvbox"
 

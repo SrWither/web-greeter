@@ -194,7 +194,7 @@ const _mockData = {
 			username: 'superman',
 			language: null,
 			layout: null,
-			image: '/usr/share/web-greeter/themes/default/img/antergos-logo-user',
+			image: '/usr/local/share/web-greeter/themes/default/img/antergos-logo-user',
 			home_directory: '/home/superman',
 			session: 'gnome',
 			logged_in: false,
@@ -206,7 +206,7 @@ const _mockData = {
 			username: 'batman',
 			language: null,
 			layout: null,
-			image: '/usr/share/web-greeter/themes/default/img/antergos-logo-user',
+			image: '/usr/local/share/web-greeter/themes/default/img/antergos-logo-user',
 			home_directory: '/home/batman',
 			session: 'cinnamon',
 			logged_in: false,
@@ -218,7 +218,7 @@ const _mockData = {
 			username: 'spiderman',
 			language: null,
 			layout: null,
-			image: '/usr/share/web-greeter/themes/default/img/antergos-logo-user',
+			image: '/usr/local/share/web-greeter/themes/default/img/antergos-logo-user',
 			home_directory: '/home/spiderman',
 			session: 'MATE',
 			logged_in: false,
@@ -710,9 +710,9 @@ class GreeterConfig {
 	}
 
 	_branding = {
-		background_images_dir: "/usr/share/backgrounds",
-		logo_image: "/usr/share/web-greeter/themes/default/img/antergos-logo-user.png",
-		user_image: "/usr/share/web-greeter/themes/default/img/antergos.png"
+		background_images_dir: "/usr/local/share/backgrounds",
+		logo_image: "/usr/local/share/web-greeter/themes/default/img/antergos-logo-user.png",
+		user_image: "/usr/local/share/web-greeter/themes/default/img/antergos.png"
 	}
 
 	_greeter = {

@@ -31,12 +31,12 @@ from ruamel import yaml
 
 from logger import logger
 
-PATH_TO_CONFIG = "/usr/local/etc/lightdm/web-greeter.yml"
+PATH_TO_CONFIG = "/usr/local/share/etc/lightdm/web-greeter.yml"
 
 web_greeter_config = {
     "config": {
         "branding": {
-            "background_images_dir": "/usr/local/backgrounds",
+            "background_images_dir": "/usr/local/share/backgrounds",
             "logo_image": "",
             "user_image": "",
         },
@@ -63,7 +63,7 @@ web_greeter_config = {
         "fullscreen": True,
         "frame": False,
         "debug_mode": False,
-        "theme_dir": "/usr/local/web-greeter/themes/",
+        "theme_dir": "/usr/local/share/web-greeter/themes/",
         "version": {
             "full": "3.3.0",
             "major": 3,

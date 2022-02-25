@@ -31,7 +31,7 @@ from ruamel import yaml
 
 from logger import logger
 
-PATH_TO_CONFIG = "/usr/local/share/etc/lightdm/web-greeter.yml"
+PATH_TO_CONFIG = "/usr/local/etc/lightdm/web-greeter.yml"
 
 web_greeter_config = {
     "config": {

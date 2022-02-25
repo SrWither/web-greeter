@@ -87,7 +87,7 @@
 -   `greeterutil` renamed to `theme_utils`
 -   `config` renamed to `greeter_config`
 -   `lightdm-webkit2-greeter.conf` renamed to `web-greeter.yml`
--   Themes are now installed inside `/usr/local/web-greeter/themes`
+-   Themes are now installed inside `/usr/local/share/web-greeter/themes`
 -   Vendors updated:
     -   **js-cookie** updated
     -   **fontawesome** updated, now in `_vendor/fontawesome/`

@@ -37,7 +37,7 @@ import config
 def list_themes() -> List[str]:
     """List available themes"""
     themes_dir = config.web_greeter_config["app"]["theme_dir"]
-    themes_dir = themes_dir if os.path.exists(themes_dir) else "/usr/local/web-greeter/themes"
+    themes_dir = themes_dir if os.path.exists(themes_dir) else "/usr/local/share/web-greeter/themes"
     filenames = os.listdir(themes_dir)
 
     dirlist = []
@@ -50,7 +50,7 @@ def list_themes() -> List[str]:
 def print_themes():
     """Print available themes"""
     themes_dir = config.web_greeter_config["app"]["theme_dir"]
-    themes_dir = themes_dir if os.path.exists(themes_dir) else "/usr/local/web-greeter/themes"
+    themes_dir = themes_dir if os.path.exists(themes_dir) else "/usr/local/share/web-greeter/themes"
     themes = list_themes()
     print(f"Themes are located in {themes_dir}\n")
     for theme in themes:

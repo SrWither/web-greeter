@@ -1,4 +1,4 @@
-# Web Greeter for LightDM
+# Web Greeter for LightDM on FreeBSD
 
 A modern, visually appealing greeter for LightDM, that allows to create web based themes with HTML, CSS and JavaScript.
 
